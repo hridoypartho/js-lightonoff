@@ -4,5 +4,37 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    text-align: center; 
+    text-align: center;
+    &__content{
+        h2{
+            color: whitesmoke;
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 50px;
+        }
+        &_button{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 30px;
+            a{
+                padding: 15px 28px;
+                background: white;
+                border-radius: 4px;
+                color: black;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                border: 1px solid transparent;
+                transition: .3s;
+                &:hover{
+                    background-color: $black;
+                    color: white;
+                    border-color: whitesmoke;
+                }
+            }
+        }
+    }
 }
